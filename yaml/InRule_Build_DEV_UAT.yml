@@ -1,0 +1,11 @@
+trigger: none
+
+jobs:
+- template: catalogSourced-TestAndPromote.yml
+  parameters:
+    RuleAppName: MultiplicationApp
+    SourceCatalogName: DEV
+    DestinationCatalogName: PROD
+    SourceLabel: LIVE
+    DestinationLabel: LIVE
+    
